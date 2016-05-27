@@ -1,3 +1,5 @@
+require 'cgi'
+
 task default: :build
 
 desc 'Install all the dependencies -- rubygems, node packages, and bower components.'
@@ -16,6 +18,21 @@ desc 'Deploy the site to S3. Assumes you have AWS credentials in your environmen
 task :deploy do
   middleman :sync
   middleman :invalidate
+
+  Rake::Task['ping'].invoke
+end
+
+task :ping do
+  domain = File.basename File.dirname(__FILE__)
+  sitemap = "https://#{domain}/sitemap.xml"
+
+  [
+    'http://www.google.com/webmasters/tools/ping?sitemap=',
+    'http://www.bing.com/ping?sitemap='
+  ].each do |base_url|
+    url = base_url + CGI.escape(sitemap)
+    sh "curl '#{url}'"
+  end
 end
 
 desc 'Clobber all the bits that are built with the :build task.'
