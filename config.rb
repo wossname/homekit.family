@@ -1,5 +1,5 @@
 # General configuration
-config[:domain]                  = '@@DOMAIN@@'
+config[:domain]                  = 'homekit.family'
 config[:www_prefix]              = false
 config[:cloudfront_distribution] = '@@CLOUDFRONT_ID@@'
 config[:twitter_owner]           = 'wossname'
@@ -9,9 +9,9 @@ config[:gtm_id]                  = '@@GTM_ID@@'
 config[:google_plus_id]          = '@@GPLUS_ID@@'
 
 # Generic metadata
-config[:short_title]   = '@@TITLE@@'
-config[:long_title]    = '@@LONG_TITLE@@'
-config[:description]   = "@@DESCRIPTION@@"
+config[:short_title]   = 'The HomeKit Family'
+config[:long_title]    = "#{config[:short_title]}: setting up a family home with Apple HomeKit"
+config[:description]   = "We're having a wee experiment to see what it's like to live in an iOS-centric geek family home, and what home automation can do for us."
 config[:logo]          = 'wossname-industries.png'
 config[:company]       = 'Wossname Industries'
 config[:company_url]   = 'https://woss.name/'
@@ -29,7 +29,7 @@ config[:related] = {
 
 # UTM-related bits
 config[:default_utm_medium] = 'website'
-config[:default_utm_campaign] = '@@TITLE@@'
+config[:default_utm_campaign] = 'The HomeKit Family'
 
 # Calculated configuration
 config[:hostname]           = config[:www_prefix] ? "www.#{config[:domain]}" : config[:domain]

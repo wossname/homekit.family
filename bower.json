@@ -1,12 +1,12 @@
 {
-  "name": "@@DOMAIN@@",
-  "description": "@@TITLE@@",
+  "name": "homekit.family",
+  "description": "The HomeKit Family",
   "main": "",
   "authors": [
     "Graeme Mathieson"
   ],
   "license": "MIT",
-  "homepage": "@@URL@@",
+  "homepage": "https://homekit.family/",
   "private": true,
   "ignore": [
     "**/.*",

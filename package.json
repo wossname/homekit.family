@@ -1,18 +1,18 @@
 {
-  "name": "@@DOMAIN@@",
+  "name": "homekit.family",
   "version": "1.0.0",
   "private": true,
-  "description": "@@TITLE@@",
+  "description": "The HomeKit Family",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wossname/@@DOMAIN@@.git"
+    "url": "git+https://github.com/wossname/homekit.family.git"
   },
   "author": "Graeme Mathieson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wossname/@@DOMAIN@@/issues"
+    "url": "https://github.com/wossname/homekit.family/issues"
   },
-  "homepage": "@@URL@@",
+  "homepage": "https://homekit.family/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "coffee-script": "^1.10.0",

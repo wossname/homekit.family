@@ -1,6 +1,6 @@
-# @@TITLE@@
+# The HomeKit Family
 
-[![Build Status](https://travis-ci.org/wossname/@@DOMAIN@@.svg?branch=master)](https://travis-ci.org/wossname/@@DOMAIN@@)
+[![Build Status](https://travis-ci.org/wossname/homekit.family.svg?branch=master)](https://travis-ci.org/wossname/homekit.family)
 
 ## Notes on Doing Stuff
 
