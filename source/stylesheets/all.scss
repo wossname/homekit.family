@@ -1,4 +1,4 @@
-$navy: #eb7066;
+$navy: #f19e4c;
 $white: #fff;
 $dark-navy: darken($navy, 10%);
 
@@ -56,6 +56,16 @@ $dark-navy: darken($navy, 10%);
   }
 
   section {
+    p, ul, address {
+      text: {
+        align: justify;
+      }
+
+      font: {
+        size: 16px;
+      }
+    }
+
     p.lead {
       font-size: 16px;
     }
@@ -85,6 +95,12 @@ $dark-navy: darken($navy, 10%);
 
       p, p a, p a:hover, h2 a, h2 a:hover {
         color: #fff;
+      }
+
+      p a, p a:hover {
+        text: {
+          decoration: underline;
+        }
       }
 
       .big-icon {
