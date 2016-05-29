@@ -126,8 +126,16 @@ $dark-navy: darken($navy, 10%);
       background: $white;
     }
 
-    &.comments {
-      padding-bottom: 40px;
+    &.article-section {
+      h2 {
+        text: {
+          align: left;
+        }
+
+        a {
+          color: #333;
+        }
+      }
     }
   }
 

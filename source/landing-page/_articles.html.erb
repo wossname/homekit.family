@@ -1,0 +1,22 @@
+<% content_for :navbar do %>
+  <li><%= link_to 'Articles', '', fragment: 'articles', class: 'page-scroll' %></li>
+<% end %>
+
+<section id="articles" class="features article-section white-section">
+  <div class="container">
+    <div class="navy-line"></div>
+    <h1>Latest Articles</h1>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>
+          <%= link_to 'HomeKitting out the house', '/articles/homekitting-out-the-house/' %>
+        </h2>
+
+        <p>
+          Some introduction to lorem ipsum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
