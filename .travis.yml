@@ -1,0 +1,16 @@
+language: ruby
+cache:
+  bundler: false
+  apt: true
+  directories:
+  - build
+  - node_modules
+  - bower_components
+before_install: nvm install v6.0.0
+install: rake deps
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: "rvm $(< .ruby-version) do bundle exec rake deploy"
+  on:
+    branch: master

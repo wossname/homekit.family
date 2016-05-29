@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= partial 'metadata' %>
+    <%= partial 'favicons' %>
+
+    <%= stylesheet_link_tag :all %>
+  </head>
+
+  <body id="page-top" class="<%= body_classes %>">
+    <%= partial 'google_tag_manager' %>
+
+    <%= yield %>
+
+    <%= javascript_include_tag :all %>
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag :ie %>
+    <![endif]-->
+  </body>
+</html>
