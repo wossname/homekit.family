@@ -1,0 +1,31 @@
+---
+layout: landing-page
+sitemap_priority: 0.1
+---
+<% content_for :navbar do %>
+  <li><%= link_to 'Home', '/' %></li>
+<% end %>
+
+<section id="thank-you" class="features navy-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="navy-line"></div>
+        <h1>Thank you for subscribing!</h1>
+
+        <p class="lead">
+          Thanks so much for subscribing. Knowing that there are other people
+          out there who are interested in the content I write is what keeps me
+          writing. You'll get an email from MailChimp shortly, just to confirm
+          your email address. Click the link in the email, and your
+          subscription will be confirmed. Then you can sit back, relax, and ask
+          Siri to set the scene to "chilled". (I have a guilty secret: I've got
+          a scene setup so I can yell, "Hey, Siri, set phasers to stun!" and
+          the house will be bathed in red light.)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= partial 'landing-page/contact' %>

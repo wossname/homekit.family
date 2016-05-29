@@ -31,6 +31,11 @@ config[:related] = {
 config[:default_utm_medium] = 'website'
 config[:default_utm_campaign] = 'The HomeKit Family'
 
+# Mailing list signup form configuration
+config[:mailchimp_url]      = "//family.us1.list-manage.com/subscribe/post?u=e2954746a3d6f76209fcd2a6a&amp;id=3aec9c4330"
+config[:mailchimp_group_id] = "5181"
+config[:mailchimp_antispam] = "b_e2954746a3d6f76209fcd2a6a_3aec9c4330"
+
 # Calculated configuration
 config[:hostname]           = config[:www_prefix] ? "www.#{config[:domain]}" : config[:domain]
 config[:url]                = "https://#{config[:hostname]}"

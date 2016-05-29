@@ -1,0 +1,27 @@
+---
+layout: landing-page
+sitemap_priority: 0.1
+---
+<% content_for :navbar do %>
+  <li><%= link_to 'Home', '/' %></li>
+<% end %>
+
+<section id="subscription-confirmed" class="features navy-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="navy-line"></div>
+        <h1>Subscription Confirmed</h1>
+
+        <p class="lead">
+          We're all sorted. That's your subscription confirmed, so you'll now
+          get updates by email when I add new content to the site. I'll aim to
+          send out a mailshot about once a month, but we'll see how that goes,
+          depending on the rate of new HomeKit news and products, eh?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= partial 'landing-page/contact' %>
