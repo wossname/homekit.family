@@ -56,10 +56,18 @@ $dark-navy: darken($navy, 10%);
   }
 
   section {
-    p, ul, address {
+    h1, h2 {
+      text: {
+        align: center;
+      }
+    }
+
+    p, li, address, label {
       text: {
         align: justify;
       }
+
+      color: #aeaeae;
 
       font: {
         size: 16px;
