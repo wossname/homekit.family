@@ -1,11 +1,11 @@
 # General configuration
 config[:domain]                  = 'homekit.family'
 config[:www_prefix]              = false
-config[:cloudfront_distribution] = '@@CLOUDFRONT_ID@@'
+config[:cloudfront_distribution] = 'E8RCPL2WH8YV8'
 config[:twitter_owner]           = 'wossname'
 config[:twitter_creator]         = 'mathie'
-config[:fb_app_id]               = '@@FB_APP_ID@@'
-config[:gtm_id]                  = '@@GTM_ID@@'
+config[:fb_app_id]               = '1598536190461823'
+config[:gtm_id]                  = 'GTM-PWKNWJ'
 config[:google_plus_id]          = '@@GPLUS_ID@@'
 
 # Generic metadata
