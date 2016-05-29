@@ -1,0 +1,24 @@
+mathie:
+  first_name: Graeme
+  last_name: Mathieson
+  image_url: /images/mathie.jpg
+  bio: |
+    By day, I'm a web and iOS developer. I specialise in the Ruby on Rails
+    framework, and have been dabbling in it for the past decade. I do quite a
+    bit of iOS work now, too, though. In particular, I've been getting into
+    Swift over the past couple of years, which I really enjoy working with. I
+    haven't found the excuse to build a HomeKit app yet, but I'm working on it!
+
+    As for messing around with home automation, I've been doing that off-and-on
+    since I was a teenager. I've built interfaces to interact with the outside
+    world from my BBC Model B, and my auld PCs running Linux. I mess around
+    with Arduinos and Raspberry PIs for fun. I've got scars on my fingers from
+    accidents with a soldering iron!
+
+    When I'm not geeking out with bits of hardware or cranking out code, I
+    really enjoy a spot of indoor rock climbing. You can often find me hanging
+    around the local climbing wall, trying to conquer my latest project!
+  social:
+    twitter: https://twitter.com/mathie
+    facebook: https://www.facebook.com/mathie
+    linkedin: https://www.linkedin.com/in/mathie

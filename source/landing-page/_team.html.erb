@@ -1,0 +1,44 @@
+<% content_for :navbar do %>
+  <li><%= link_to 'Author', '', fragment: 'team', class: 'page-scroll' %></li>
+<% end %>
+
+<section id="team" class="white-section team">
+  <div class="container">
+    <div class="m-b-lg">
+      <div class="text-center">
+        <div class="navy-line"></div>
+        <h1>About the Author</h1>
+      </div>
+    </div>
+
+    <% data.team.each do |id, member|%>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="team-member wow fadeInLeft">
+            <%= image_tag member.image_url, alt: [member.first_name, member.last_name].compact.join(' '), class: 'img-responsive img-circle' %>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="wow fadeInRight">
+            <h4>
+              <span class="navy"><%= member.first_name %></span>
+              <%= member.last_name %>
+            </h4>
+
+            <%= markdown member.bio %>
+
+            <ul class="list-inline social-icon">
+              <% member.social.each do |icon, url| %>
+                <li>
+                  <% link_to url do %>
+                    <i class="fa fa-<%= icon %>"></i>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+</section>
