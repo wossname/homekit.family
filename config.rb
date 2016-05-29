@@ -6,7 +6,7 @@ config[:twitter_owner]           = 'wossname'
 config[:twitter_creator]         = 'mathie'
 config[:fb_app_id]               = '1598536190461823'
 config[:gtm_id]                  = 'GTM-PWKNWJ'
-config[:google_plus_id]          = '@@GPLUS_ID@@'
+config[:google_plus_id]          = '108986677544246298780'
 
 # Generic metadata
 config[:short_title]   = 'The HomeKit Family'
