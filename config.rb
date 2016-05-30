@@ -47,9 +47,10 @@ config[:copyright]          = "Copyright &copy; 2015-#{Time.now.year} #{config[:
 set :markdown_engine, :redcarpet
 
 # Pages with no layout
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page '/*.xml',           layout: false
+page '/*.json',          layout: false
+page '/*.txt',           layout: false
+page '/articles/*.html', layout: :article
 
 # General configuration
 activate :directory_indexes
